@@ -1,0 +1,27 @@
+//Geral
+@import 'geral';
+
+//Page
+@import 'header';
+@import 'home';
+@import 'cursos';
+@import 'programas';
+@import 'professor';
+@import 'escolher';
+@import 'footer';
+@import 'contato';
+@import 'modal';
+@import 'menu-mobile';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    max-width: 100%;
+
+}

@@ -1,0 +1,14 @@
+$color1: #fff;
+$bgbt: #7971ea;
+$btnhover:#4f45e3;
+$hoverlink: #3a2ee0;
+
+
+$roboto: 'Roboto', sans-serif;
+$arial: Arial, Helvetica, sans-serif;
+
+@mixin flex ($display, $justify, $align: stretch ) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+}

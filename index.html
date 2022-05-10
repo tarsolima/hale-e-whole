@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hale & Whole</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e43694a111.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+            <a href="#home" class="logo"> Hale & Whole</a>
+            <nav>
+                <button class="menu-header" data-menu="button">Menu</button>
+                <ul data-menu="list">
+                    <li><a href="#home">Home</a> </li>
+                    <li><a href="#cursos">Cursos</a></li>
+                    <li><a href="#programas">Programas</a></li>
+                    <li><a href="#professores">Professores</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                <a href="#" class="contato-1"  data-modal="abrir">Login</a>
+                </ul>
+            </nav>
+            <a href="#" class="contato" data-modal="abrir">Login</a>
+    </header>
+    <section data-scroll>
+        <div id="home" class="bg">
+            <div class="container1">
+                <div class=aprender>
+                    <h1>Aprenda com os mais experientes</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ipsa nulla sed quis rerum amet natus quas necessitatibus.</p>
+                    <button>Cadastre-se</button>
+                </div>
+                <div class="login">
+                    <form action="enviar.php" method="POST">
+                        <p>Inscreva-se</p>
+                        <input type="email" name="email" placeholder="Digite seu e-mail" autocomplete="off">
+                        <input type="password" name="senha" placeholder="Digite sua senha">
+                        <input type="password" name="repita senha" placeholder="Repita sua senha">
+                        <input type="submit" value="Entrar">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="cursos" id="cursos" data-scroll>
+            <div class="overlay"></div>
+            <h2>Cursos</h2>
+            <div class="box-cursos">
+                <div class="box" data-scrollbox>
+                    <figure>
+                        <img src="img/html.png" alt="Html">
+                    </figure>
+                    <div class="conteudo">
+                        <p>4 Lições / 12 Semanas</p>
+                        <a href="#">Estude Html 5</a>
+                        <p>Lorem ipsum dolor sit amet ipsa nulla adipisicing elit. </p>
+                    </div>
+                    <div class="minbox">
+                        <p>2.193 Estudantes</p>
+                        <i class="fas fa-users"></i>
+                        <i class="fas fa-comments"></i>
+                        <p class="footerp">2</p>
+                    </div>
+                </div>
+                <div class="box" data-scrollbox>
+                    <figure>
+                        <img src="img/css.png" alt="Html">
+                    </figure>
+                    <div class="conteudo">
+                        <p>4 Lições / 12 Semanas</p>
+                        <a href="#">Estude Css 3</a>
+                        <p>Lorem ipsum dolor sit amet ipsa nulla adipisicing elit. </p>
+                    </div>
+                    <div class="minbox">
+                        <p>2.193 Estudantes</p>
+                        <i class="fas fa-users"></i>
+                        <i class="fas fa-comments"></i>
+                        <p class="footerp">2</p>
+                    </div>
+                </div>
+                <div class="box" data-scrollbox>
+                    <figure>
+                        <img src="img/javascript.png" alt="Html">
+                    </figure>
+                    <div class="conteudo">
+                        <p>4 Lições / 12 Semanas</p>
+                        <a href="#">Estude Javascript</a>
+                        <p>Lorem ipsum dolor sit amet ipsa nulla adipisicing elit. </p>
+                    </div>
+                    <div class="minbox">
+                        <p>2.193 Estudantes</p>
+                        <i class="fas fa-users"></i>
+                        <i class="fas fa-comments"></i>
+                        <p  id="programas" class="footerp">2</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main>
+        <div class="nossosprogramas" data-scroll>
+            <h2>Nossos Programas</h2>
+            <p class="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam repellat aut neque! Doloribus sunt non aut reiciendis, vel recusandae obcaecati hic dicta repudiandae in quas quibusdam ullam, illum sed veniam!</p>
+            <div class="box1" data-scroll>
+                <div>
+                    <img src="img/img1.svg" alt="">
+                </div>
+                <div class="text">
+                    <h2>Nós somos exelentes em educação</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem maxime nam porro possimus fugiat quo molestiae illo.</p>
+                    <div class="icons">
+                        <p><span><i class="fas fa-graduation-cap"></i></span>22.931 Alunos graduados</p>
+                        <p class="p"><span><i class="fas fa-university"></i></span>150 Universidades pelo mundo</p>
+                    </div>
+                </div>
+            </div> 
+            <div class="box1 box-reverse" data-scroll>
+                <div class="text">
+                    <h2>Esforce-se para ser excelente</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem maxime nam porro possimus fugiat quo molestiae illo.</p>
+                    <div class="icons">
+                        <p><i class="fas fa-graduation-cap"></i> 22.931 Alunos graduados</p>
+                        <p class="p"><span><i class="fas fa-university"></i></span>150 Universidades pelo mundo</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="img/img2.svg" alt="">
+                </div>
+            </div> 
+            <div class="box1" data-scroll>
+                <div>
+                    <img src="img/img3.svg" alt="">
+                </div>
+                <div class="text" >
+                    <h2>Programar é Vida</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem maxime nam porro possimus fugiat quo molestiae illo.</p>
+                    <div class="icons">
+                        <p><span><i class="fas fa-graduation-cap"></i></span>22.931 Alunos graduados</p>
+                        <p id="professores" class="p"><span><i class="fas fa-university"></i></span>150 Universidades pelo mundo</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div  class="nossosprofessores" data-scroll>
+            <h2>Nossos Professores </h2>
+            <p class="p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam repellat aut neque! Doloribus sunt non aut reiciendis, vel recusandae obcaecati hic dicta repudiandae in quas quibusdam ullam, illum sed veniam!</p>
+            <div class="boxprofessores">
+                <div class="professores">
+                    <div class="logoprof">
+                        <img src="img/logoprof1.jpg" alt="">
+                    </div>
+                    <h3>Benjamin Stone</h3>
+                    <p>Professor de HTML5</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro eius suscipit delectus enim iusto tempora, adipisci at provident.</p>
+                </div>
+                <div class="professores">
+                    <div class="logoprof">
+                        <img src="img/logoprof2.jpg" alt="">
+                    </div>
+                    <h3>Katleen Stone</h3>
+                    <p>Professora de CSS3</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro eius suscipit delectus enim iusto tempora, adipisci at provident.</p>
+                </div>
+                    <div class="professores">
+                    <div class="logoprof">
+                        <img src="img/logoprof3.jpg" alt="">
+                    </div>
+                    <h3>Sadie White</h3>
+                    <p>Professora de Javascript</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro eius suscipit delectus enim iusto tempora, adipisci at provident.</p>
+                </div>
+            </div>
+        </div>
+        <div class="escolher" data-scroll>
+            <h2>Porque nos Escolher </h2>
+            <div class="boxescolher">
+                <div class="escolher2">
+                    <p><span><i class="fas fa-graduation-cap"></i></span>22.931 Alunos Graduados</p>
+                    <p><span><i class="fas fa-university"></i></span>150 Universidades Pelo Mundo</p>
+                    <p><span><i class="fas fa-graduation-cap"></i></span>Os Melhores Professores</p>
+                    <p><span><i class="fas fa-university"></i></span>Epandindo seu Conhecimento</p>
+                    <p><span><i class="fas fa-graduation-cap"></i></span>O Melhor Ensino Online</p>
+                    <p><span><i class="fas fa-university"></i></span>Os Melhores Profissionais</p>
+                </div>
+                <div  class="remanejo">
+                </div>
+            </div>
+        </div>
+        <div id="contato" data-scroll>
+            <h2>Fale Conosco</h2>
+            <p>Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia<br> quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt<br> nisi.
+            </p>
+            <form action="enviar.php" method="POST">
+                <div class="intro">
+                    <input type="text" name="nome" autocomplete="off" placeholder="Digite seu Nome">
+                    <input type="text" name="sobrenome" autocomplete="off" placeholder="Digite seu Sobrenome">
+                </div>
+                <input type="email" name="email" autocomplete="off" placeholder="Digite seu e-mail">
+                <input type="text" class="assunto" autocomplete="off" name="Assunto" placeholder="Assunto">
+                <textarea name="mensagem" cols="30" rows="10" placeholder="Deixe sua mensagem aqui"></textarea>
+                <input type="submit" class="buttonmensage" value="Enviar mensagem">
+            </form>
+        </div>
+    </main>
+   <footer data-scroll>
+        <div class="about">
+            <h2>Sobre Hale e Whole</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur<br> adipisicing elit. Porro consectetur ut hic ipsum et<br> veritatis corrupti. Itaque eius soluta optio <br> dolorum temporibus in, atque, quos fugit sunt sit <br> quaerat dicta.</p>
+        </div>
+        <div class="link">
+            <h2>Links</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#programas">Programas</a></li>
+                <li><a href="#professores">Preofessores</a></li>
+            </ul>
+        </div>
+        <div class="subscribe">
+            <h2>Se Inscreva</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. Nesciunt incidunt iure iusto <br>architecto? Numquam, natus?</p>
+            <input type="email" name="email" autocomplete="off" placeholder="E-mail">
+            <button>Subscribe</button>
+        </div>
+    </footer>
+    <p class="abner">Copyright &copy;2020 Todos os direitos reservados Abner Tarso dos Santos Lima</p>
+    <setion class="modal-container" data-modal="container">
+        <div class="modal">
+            <button data-modal="fechar" class="fechar">X</button>
+            <form action="" method="post">
+                <h1>Login</h1>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+                <input type="submit" class="buttonmensage" value="Entrar">
+            </form>
+        </div>
+    </setion>
+    <script src="javascript/modal.js"></script>
+    <script src="javascript/menu-mobile.js"></script>
+</body>
+</html>

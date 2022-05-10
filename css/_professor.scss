@@ -1,0 +1,86 @@
+.nossosprofessores {
+    margin-top: 60px;
+
+     h2 {
+        @include flex (flex, center, center);
+        padding: 0 10px;
+        font-family: $roboto;
+        font-size: 3em;
+        text-align: center;
+
+        @media (max-width: 450px) {
+            font-size: 2em;
+        }
+    }
+
+    .p3 {
+        padding: 0 20px;
+        max-width: 37.5em;
+        margin: 20px auto 0 auto;
+    }
+
+    p {
+        @include flex (flex, center, center);
+        color: #808080;
+        font-family: $roboto;
+        margin-top: 30px;
+        line-height: 1.7;
+        text-align: center;
+
+        @media (max-width:375px) {
+            padding:0  10px;
+        }
+    }
+
+    .boxprofessores {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 360px));
+        align-content: center;
+        justify-content: center;
+        gap: 15px;
+        margin: 150px 10px 60px 10px;
+
+
+        @media (max-width: 1146px) {
+            row-gap: 100px;
+        }
+    
+
+        .professores {
+            max-width: 21.875em;
+            height: 21.875em;
+            background:$color1;
+            text-align: center;
+            padding: 50px 20px 20px 20px;
+            border: 1px solid rgba(228, 226, 226, 0.987);
+            position: relative;
+        
+            img {
+                max-width: 40%;
+                background-position: center;
+                position: absolute;
+                border-radius: 50%;
+                top: -75px;
+                left: 107px;
+
+                @media (max-width:373px) {
+                    left: 98px;
+                }
+            }
+
+            h3 {
+                font-family: $roboto;
+                margin: 50px 0 -16px 0;
+                font-size: 1.2em;
+                font-weight: 300;
+                
+                @media (max-width:373px) {
+                    margin-top: 30px;
+                }
+                }
+        }
+
+        
+    }
+
+}

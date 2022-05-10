@@ -1,0 +1,93 @@
+[data-menu="button"] {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    [data-menu="button"] {
+        position: relative;
+        display: flex;
+        align-items: center;
+        font-family: "Roboto",sans-serif;
+        background: #7971ea;
+        color: #fff;
+        text-decoration: none;
+        font-size: 0.87em;
+        padding: 14px 30px;
+        margin: -13px 10px 0 10px;
+        border: transparent;
+        border-radius: 5px;
+        z-index: 2;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover {
+            background: $hoverlink;
+        }
+
+        &::before {
+            content: '';
+            display: inline-block;
+            height: 2px;
+            width: 12px;
+            margin-right: 5px;
+            background: #fff;
+            box-shadow: 0  4px #fff, 0 -4px #fff;
+            transition: transform 0.3s;
+        }
+
+        &.active::before {
+            transform: rotate(90deg);
+        }
+    }
+}
+
+[data-menu="list"] {
+    @media (max-width: 800px) {
+        display: none;
+        background: #fff;
+        width: 132px;
+        z-index: 1;
+        padding: 60px 0 20px 10px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px 0 rgba(0,0,0,.2);
+        position: absolute;
+        top: 0;
+        animation: teste .5s forwards;
+    }
+
+    &.active {
+        display: block;
+    }
+
+    @keyframes teste {
+        from {
+            opacity: 0;
+            transform: translate3d(0, -30px, 0);
+        }
+
+        to {
+            opacity: 1;
+            transform: translate3d(0, 0px, 0);
+        }
+    }
+}
+
+.contato-1 {
+    display: none;
+    font-family: $roboto;
+    background: $bgbt;
+    color: $color1;
+    text-decoration: none;
+    font-size: 0.87em;
+    padding: 14px 30px;
+    margin: 15px 10px 0 10px;
+    border-radius: 30px;
+    transition: all 0.3s;
+    @media (max-width: 800px) {
+        display: inline-block;
+
+        &:hover {
+            background:$btnhover;
+        }
+    }
+}
