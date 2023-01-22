@@ -1,4 +1,5 @@
 import outsideClick from './outside.js';
+
 export default function menuMobile() {
     const menuButtom = document.querySelector('[data-menu="button"]');
     const menuList = document.querySelector('[data-menu="list"]');
