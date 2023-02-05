@@ -901,8 +901,14 @@ footer .subscribe button:hover {
   width: 360px;
   background: #fff;
   padding: 40px;
+  margin: 0 10px;
   border-radius: 5px;
   position: relative;
+}
+@media (max-width: 390px) {
+  .modal {
+    padding: 40px 15px;
+  }
 }
 .modal h1 {
   font-size: 2em;
