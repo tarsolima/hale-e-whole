@@ -1,5 +1,5 @@
 header {
-    position: fixed;
+    position: static;
     z-index: 1;
     width: 100%;
     height: 3.75em;
@@ -7,7 +7,10 @@ header {
     font-weight: bolder;
     padding: 30px 0 20px 0;
     background: $color1;
-    box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease-in-out;
+    // box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.2);
+
+
 
     .logo{
         color: #000;
@@ -16,7 +19,6 @@ header {
         font-size: 1.125em;
         padding-left:10px;
         margin-left: 20px;
-        transition: all 0.3s;
 
         &:hover {
             color:$hoverlink;
@@ -73,4 +75,9 @@ header {
             display: none;
         }
     }
+}
+
+.ativar-header {
+    position: fixed;
+    transform: translateY(-2px);
 }

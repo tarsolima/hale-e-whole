@@ -11,7 +11,8 @@ export default class MenuMobile {
         this.initmenu = this.initmenu.bind(this);
     }
 
-    initmenu() {
+    initmenu(event) {
+        event.preventDefault();
         this.menuButtom.classList.add(this.activeClass);
         this.menuList.classList.add(this.activeClass);
         outsideClick(this.menuList, this.eventos ,() => {

@@ -2,8 +2,7 @@ footer {
     width: 100%;
     @include flex (flex, space-around);
     flex-wrap: wrap;
-    margin-bottom: 100px;
-
+    margin-bottom: 50px;
 
     @media (max-width: 770px) {
         flex-direction: column;
@@ -17,9 +16,6 @@ footer {
                 margin-top: 20px;
             }
         }
-
-
-
     }
 
     .about {
@@ -29,8 +25,11 @@ footer {
 
         @media (max-width: 770px) {
             margin-bottom: 15px;
-        }
 
+            h2 {
+                text-align: center;
+            }
+        }
     }
 
     .subscribe {
@@ -39,8 +38,8 @@ footer {
         }
     }
 
-    .about h2, .link h2, .subscribe h2  {
-        margin-bottom: 20px;
+    .about h2, .subscribe h2  {
+        margin-bottom: 10px;
         font-family: $arial;
 
         @media (max-width: 320px) {
@@ -56,37 +55,12 @@ footer {
     display: -ms-flexbox;
     font-family: $roboto;
 
-    
     @media (max-width: 320px) {
             display: block;
             text-align: center;
             margin-bottom: 20px;
         }      
 
-    }
-
-    .link {
-        text-align: center;
-
-        ul {
-            list-style-type: none;
-            text-align: center;
-        }
-
-        li {
-            margin: 10px;
-            a {
-                text-decoration: none;
-                color: $bgbt;
-                font-size: 1em;
-                font-family: $arial;
-                transition: all 0.3s;
-
-                &:hover {
-                    color:$hoverlink;
-                }
-            }
-        }   
     }
 
     .subscribe {
@@ -99,7 +73,7 @@ footer {
 
         input[type=email] {
             height: 40px;
-            width: 56%;
+            width: 50%;
             margin-top: 15px;
             padding-left: 10px;
             color: #495057;
@@ -124,6 +98,7 @@ footer {
             font-weight: bold;
             background: $bgbt;
             border: none;
+            cursor: pointer;
             position: relative;
             right: 8px;
             top: 2px;
