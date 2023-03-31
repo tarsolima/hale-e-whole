@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/e43694a111.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header data-header>
+    <header>
             <a href="#home" class="logo"> Hale & Whole</a>
             <nav>
                 <button class="menu-header" data-menu="button">Menu</button>
@@ -23,6 +23,21 @@
                 </ul>
             </nav>
             <a href="#" class="contato" data-modal="abrir">Login</a>
+    </header>
+    <header data-header>
+        <a href="#home" class="logo"> Hale & Whole</a>
+        <nav>
+            <button class="menu-header" data-menu="button">Menu</button>
+            <ul data-menu="list">
+                <li><a href="#home">Home</a> </li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#programas">Programas</a></li>
+                <li><a href="#professores">Professores</a></li>
+                <li><a href="#contato">Contato</a></li>
+            <a href="#" class="contato-1" data-modal="abrir">Login</a>
+            </ul>
+        </nav>
+        <a href="#" class="contato" data-modal="abrir">Login</a>
     </header>
     <section data-scroll>
         <div id="home" class="bg">
@@ -43,7 +58,7 @@
                 </div>
             </div>
         </div>
-        <div class="cursos" data-scroll="anima">
+        <div class="cursos" data-scroll>
             <div class="overlay"></div>
             <h2 id="cursos">Cursos</h2>
             <div class="box-cursos">
@@ -99,12 +114,12 @@
         </div>
     </section>
     <main>
-        <div class="nossosprogramas">
-            <div data-scroll data-scroll="anima" data-programa>
+        <div class="nossosprogramas" data-scroll data-programa>
+            <div>
                 <h2>Nossos Programas</h2>
                 <p class="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam repellat aut neque! Doloribus sunt non aut reiciendis, vel recusandae obcaecati hic dicta repudiandae in quas quibusdam ullam, illum sed veniam!</p>
             </div>
-            <div class="box1">
+            <div class="box1" data-scroll>
                 <div>
                     <img src="img/img1.svg" alt="">
                 </div>
@@ -117,7 +132,7 @@
                     </div>
                 </div>
             </div> 
-            <div class="box1 box-reverse">
+            <div class="box1 box-reverse" data-scroll>
                 <div class="text">
                     <h2>Esforce-se para ser excelente</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem maxime nam porro possimus fugiat quo molestiae illo.</p>
@@ -130,7 +145,7 @@
                     <img src="img/img2.svg" alt="">
                 </div>
             </div> 
-            <div class="box1">
+            <div class="box1" data-scroll>
                 <div>
                     <img src="img/img3.svg" alt="">
                 </div>
@@ -144,7 +159,7 @@
                 </div>
             </div> 
         </div>
-        <div  class="nossosprofessores" data-scroll data-scroll="anima">
+        <div  class="nossosprofessores" data-scroll>
             <h2>Nossos Professores </h2>
             <p class="p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam repellat aut neque! Doloribus sunt non aut reiciendis, vel recusandae obcaecati hic dicta repudiandae in quas quibusdam ullam, illum sed veniam!</p>
             <div class="boxprofessores">
@@ -187,7 +202,7 @@
                 </div>
             </div>
         </div>
-        <div id="contato" class="contato-alteracao" data-scroll data-scroll="anima">
+        <div id="contato" class="contato-alteracao" data-scroll>
             <h2>Fale Conosco</h2>
             <p>Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia<br> quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt<br> nisi.
             </p>
@@ -203,7 +218,7 @@
             </form>
         </div>
     </main>
-   <footer data-scroll>
+   <footer>
         <div class="about">
             <h2>Sobre Hale e Whole</h2>
             <p>Lorem ipsum dolor sit amet, consectetur<br> adipisicing elit. Porro consectetur ut hic ipsum et<br> veritatis corrupti. Itaque eius soluta optio <br> dolorum temporibus in, atque, quos fugit sunt sit <br> quaerat dicta.</p>
