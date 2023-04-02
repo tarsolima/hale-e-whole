@@ -2,8 +2,8 @@ import outsideClick from './outside.js';
 
 export default class MenuMobile {
     constructor(menuButtom, menuList, event) {
-        this.menuButtom = document.querySelectorAll(menuButtom);
-        this.menuList = document.querySelectorAll(menuList);
+        this.menuButtom = document.querySelector(menuButtom);
+        this.menuList = document.querySelector(menuList);
         this.activeClass = 'active';
         if (this.eventos === undefined) this.eventos = ['click', 'touchstart'];
         else this.eventos = event;
@@ -13,28 +13,22 @@ export default class MenuMobile {
 
     initmenu(event) {
         event.preventDefault();
-        this.menuButtom.forEach(itens => itens.classList.add(this.activeClass));
-        this.menuList.forEach(itens => itens.classList.add(this.activeClass));
-        this.menuList.forEach(menu => {
-            outsideClick(menu, this.eventos ,() => {
-                // this.menuButtom.classList.remove(this.activeClass);
-                // this.menuList.classList.remove(this.activeClass);
-                this.menuButtom.forEach(itens => itens.classList.remove(this.activeClass));
-                this.menuList.forEach(itens => itens.classList.remove(this.activeClass));
-            })
+        this.menuButtom.classList.add(this.activeClass);
+        this.menuList.classList.add(this.activeClass);
+        outsideClick(this.menuList, this.eventos ,() => {
+            this.menuButtom.classList.remove(this.activeClass);
+            this.menuList.classList.remove(this.activeClass);
         });
     }
 
     addEvent() {
         this.eventos.forEach((userEvent) => {
-            this.menuButtom.forEach(itens => {
-                itens.addEventListener(userEvent, this.initmenu);
-            });
+            this.menuButtom.addEventListener(userEvent, this.initmenu);
         });
     }
 
     init() {
-        if (this.menuButtom.length && this.menuList.length) {
+        if (this.menuButtom && this.menuList) {
             this.addEvent();
         }
         return this;

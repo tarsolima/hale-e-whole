@@ -2,7 +2,6 @@ import MenuMobile from './modules/menu-mobile.js';
 import Modal from './modules/modal.js';
 import AnimacaoScroll from './modules/scroll-anima.js';
 import ScrollSuave from './modules/scroll-suave.js';
-import AtivarHeader from './modules/header-suave.js';
 
 const modal = new Modal('[data-modal="abrir"]', '[data-modal="fechar"]', '[data-modal="container"]');
 modal.init();
@@ -12,9 +11,6 @@ menuMobile.init();
 
 const scrollSuave = new ScrollSuave('[data-menu="list"] a[href^="#"]');
 scrollSuave.init();
-
-const ativarHeader = new AtivarHeader('[data-header]', '[data-programa]');
-ativarHeader.init();
 
 const animacaoScroll = new AnimacaoScroll();
 animacaoScroll.init();
