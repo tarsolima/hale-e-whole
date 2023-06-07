@@ -2,7 +2,7 @@ footer {
     width: 100%;
     @include flex (flex, space-around);
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    padding: 60px 0;
 
     @media (max-width: 770px) {
         flex-direction: column;
