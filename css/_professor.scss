@@ -1,5 +1,5 @@
 .nossosprofessores {
-    margin-top: 60px;
+    padding: 60px 0;
 
      h2 {
         @include flex (flex, center, center);
@@ -38,7 +38,7 @@
         align-content: center;
         justify-content: center;
         gap: 15px;
-        margin: 150px 10px 60px 10px;
+        margin: 150px 10px 0 10px;
 
 
         @media (max-width: 1146px) {
