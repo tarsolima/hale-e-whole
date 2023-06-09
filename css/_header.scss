@@ -1,5 +1,5 @@
 header {
-    @include flex (flex, space-between, center);
+    @include flex (flex, space-around, center);
     // position: fixed;
     // z-index: 1;
     width: 100%;
@@ -19,6 +19,7 @@ header {
         font-size: 1.125em;
         padding-left:10px;
         margin-left: 20px;
+        transition: all .3s;
 
         &:hover {
             color:$hoverlink;
@@ -28,7 +29,6 @@ header {
 
     nav ul{
         display: flex;
-        list-style-type: none;
 
         li {
             @media (max-width: 800px) {
@@ -37,7 +37,6 @@ header {
         }
 
         li a {
-            text-decoration: none;
             color: rgba(0, 0, 0, 0.789);
             font-size: 1.1em;
             font-weight: 300;
