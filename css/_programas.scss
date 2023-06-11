@@ -1,123 +1,122 @@
 .nossosprogramas {
-    padding: 60px 0;
+    padding-top: 60px;
 
     .programas-text {
         max-width: 37.5em;
-        margin: 0 auto 30px auto;
-        padding: 0 10px;
+        margin: 0 auto;
 
         .programas-h2 {
             text-align: center;
             font-family: $roboto;
-            font-size: 3em;
+            font-size: 3rem;
+            padding: 0 10px;
      
             @media (max-width: 450px) {
-             font-size: 2em;
-             }
+                font-size: 2rem;
+            }
         }
      
         .programas-main-text {
-    
-            @media (max-width: 604px) {
-                padding: 0 20px;
-            }
-            
+            font-family: $roboto;
+            text-align: center;
+            color: #808080;
+            line-height: 1.5;
+            margin: 15px 0 30px 0;
+            padding: 0 10px;
         }
     }
 
-   p {
-       font-family: $roboto;
-       color: #808080;
-       text-align: center;
-       margin-top: 15px;
-       line-height: 1.7;
-   }
-
-   @media (max-width: 920px) {
+   @media (max-width: 1106px) {
       .box-reverse {
           flex-direction: column-reverse;
-      }
-
-   }
+        }
+    }
 }
 
-
 .box1 {
-   @include flex (flex, space-between, center);
-   margin: 0 60px 0 60px;
+   @include flex (flex, center, center);
+   padding: 0 10px;
+   margin-bottom: 50px;
 
-   @media (max-width: 922px) {
+   @media (max-width: 1106px) {
        flex-wrap: wrap;
-   }
+    }
 
-   @media (max-width: 663px) {
-       margin: 50px 10px 100px 10px;
-   }
+    .container-img-box {
+        max-width: 650px;
+        margin-right: 50px;
+        
+        @media (max-width: 1106px) {
+            margin-right: 0px;
+            margin-bottom: 40px;
+        }
+        
+        .img-box {
+            width: 100%;
+            vertical-align: middle;
+        }
+    }
 
-   .text {
-       @media (max-width:332px) {
-           max-width: 20em;
-       }
+    .container-img-box-reverse {
+        max-width: 650px;
+        margin-left: 50px;
+
+        @media (max-width: 1106px) {
+            margin-left: 0px;
+            margin-bottom: 40px;
+        }
+
+        .img-box {
+            width: 100%;
+            vertical-align: middle; 
+        }
+    }
+
+   .box-text {
+       max-width: 550px;
 
        h2 {
-           font-size: 2em;
-           text-align: center;
            font-family: $roboto;
-   
-           @media (max-width: 920px) {
-            margin-top: 20px;
-           }
+           font-size: 2rem;
+           text-align: center;
 
            @media (max-width: 450px) {
-            font-size: 1.5em;
+                font-size: 1.5rem;
             }
-       }
+        }
 
-       p {
-           font-size: 1.05em;
-           margin-bottom: 15px;
-       }
-   }
-
-   img {
-       width:80%;
-       height: auto;
-       vertical-align: middle;
-       border-style: none;
-   }
+       .paragraphs-program {
+           font-family: $roboto;
+           font-size: 1rem;
+           line-height: 1.5;
+           text-align: center;
+           color: #808080;
+           margin: 15px 0;
+        }
+    }
 
    .icons {
-       position: relative;
-       width: 100%;
+       max-width: 300px;
+       margin: 0 auto;
 
        p {
-           font-size: 1.05em;
+           font-family: $roboto;
+           font-size: 1rem;
+           text-align: start;
            color: $bgbt;
-           display: table;
-           margin-top: 25px;
-           width: 20em;
-           margin: 25px auto 0 auto;
-           text-align:start;
-
-           @media (max-width:396px) {
-               width: 100%;
-               text-align: center;
-           }
-       }
+           margin-top: 15px;
+        }
 
        .fas {
-           text-align:center;
+           text-align: center;
            height: 35px;
            width: 35px;
-           line-height: 2.8;
+           line-height: 2.7;
            background: $bgbt;
            border-radius: 50%;
-           margin-right: 15px;
-           position: relative;
-           top: -8px;
+           margin-right: 10px;
            color: $color1;
            font-size: .8em;
-
-       }
-   }
+        }
+    }
 }
