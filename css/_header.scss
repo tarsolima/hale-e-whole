@@ -10,15 +10,16 @@ header {
     transition: transform 0.5s ease-in-out;
     // box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.2);
 
-
+    @media (max-width: 800px) {
+        justify-content: space-between;
+    }
 
     .logo{
         color: #000;
         text-decoration: none;
         font-family: $roboto;
         font-size: 1.125em;
-        padding-left:10px;
-        margin-left: 20px;
+        margin-left: 10px;
         transition: all .3s;
 
         &:hover {
@@ -62,7 +63,7 @@ header {
         text-decoration: none;
         font-size: 0.87em;
         padding: 14px 30px;
-        margin: -13px 10px 0 10px;
+        margin: -13px 10px 0 0;
         border-radius: 30px;
         transition: all 0.3s;
 
