@@ -1,6 +1,6 @@
 export default class AnimacaoScroll {
-  constructor() {
-    this.sections = document.querySelectorAll('[data-scroll]');
+  constructor(dataScroll) {
+    this.sections = document.querySelectorAll(dataScroll);
     this.windowMetade = window.innerHeight * 0.8;
     this.animaScroll = this.animaScroll.bind(this);
   }

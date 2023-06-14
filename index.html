@@ -9,11 +9,11 @@
     <script src="https://kit.fontawesome.com/e43694a111.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header data-menu="list">
-            <a href="#home" class="logo">Hale & Whole</a>
+    <header>
+        <a href="#home" class="logo">Hale & Whole</a> 
             <nav>
                 <button class="menu-header" data-menu="button">Menu</button>
-                <ul>
+                <ul data-menu="list">
                     <li><a href="#home">Home</a> </li>
                     <li><a href="#cursos">Cursos</a></li>
                     <li><a href="#programas">Programas</a></li>
@@ -43,9 +43,9 @@
                 </div>
             </div>
         </div>
-        <div class="cursos" data-scroll>
+        <div id="cursos" class="cursos">
             <div class="overlay"></div>
-            <h2 id="cursos">Cursos</h2>
+            <h2>Cursos</h2>
             <div class="box-cursos">
                 <div class="box">
                     <figure>
@@ -92,82 +92,85 @@
                         <p>2.193 Estudantes</p>
                         <i class="fas fa-users"></i>
                         <i class="fas fa-comments"></i>
-                        <p  id="programas" class="footerp">2</p>
+                        <p class="footerp">2</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <main>
-        <div class="nossosprogramas" data-scroll data-programa>
-            <div>
-                <h2>Nossos Programas</h2>
-                <p class="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam repellat aut neque! Doloribus sunt non aut reiciendis, vel recusandae obcaecati hic dicta repudiandae in quas quibusdam ullam, illum sed veniam!</p>
+        <div class="nossosprogramas" id="programas" data-scroll data-programa>
+            <div class="programas-text">
+                <h2 class="programas-h2">Nossos Programas</h2>
+                <p class="programas-main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam repellat aut neque! Doloribus sunt non aut reiciendis, vel recusandae obcaecati hic dicta repudiandae in quas quibusdam ullam, illum sed veniam!</p>
             </div>
             <div class="box1" data-scroll>
-                <div>
-                    <img src="img/img1.svg" alt="">
-                </div>
-                <div class="text">
-                    <h2>Nós somos exelentes em educação</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem maxime nam porro possimus fugiat quo molestiae illo.</p>
+                <figure class="container-img-box">
+                    <img src="img/img1.svg" class="img-box" alt="comunicação para educação">
+                </figure>
+                <div class="box-text">
+                    <h2 class="subtitle-programs">Nós somos exelentes em educação</h2>
+                    <p class="paragraphs-program">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem maxime nam porro possimus fugiat quo molestiae illo.</p>
                     <div class="icons">
                         <p><span><i class="fas fa-graduation-cap"></i></span>22.931 Alunos graduados</p>
                         <p class="p"><span><i class="fas fa-university"></i></span>150 Universidades pelo mundo</p>
                     </div>
                 </div>
-            </div> 
+            </div>
+
             <div class="box1 box-reverse" data-scroll>
-                <div class="text">
+                <div class="box-text">
                     <h2>Esforce-se para ser excelente</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem maxime nam porro possimus fugiat quo molestiae illo.</p>
+                    <p class="paragraphs-program">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem maxime nam porro possimus fugiat quo molestiae illo.</p>
                     <div class="icons">
                         <p><i class="fas fa-graduation-cap"></i> 22.931 Alunos graduados</p>
                         <p class="p"><span><i class="fas fa-university"></i></span>150 Universidades pelo mundo</p>
                     </div>
                 </div>
-                <div>
-                    <img src="img/img2.svg" alt="">
-                </div>
+                <figure class="container-img-box-reverse">
+                    <img src="img/img2.svg" class="img-box" alt="melhores aulas">
+                </figure>
             </div> 
             <div class="box1" data-scroll>
-                <div>
-                    <img src="img/img3.svg" alt="">
-                </div>
-                <div class="text" >
+                <figure class="container-img-box">
+                    <img src="img/img3.svg" class="img-box" alt="programe conosco">
+                </figure>
+                <div class="box-text" >
                     <h2>Programar é Vida</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem maxime nam porro possimus fugiat quo molestiae illo.</p>
+                    <p class="paragraphs-program">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem maxime nam porro possimus fugiat quo molestiae illo.</p>
                     <div class="icons">
                         <p><span><i class="fas fa-graduation-cap"></i></span>22.931 Alunos graduados</p>
-                        <p id="professores" class="p"><span><i class="fas fa-university"></i></span>150 Universidades pelo mundo</p>
+                        <p class="p"><span><i class="fas fa-university"></i></span>150 Universidades pelo mundo</p>
                     </div>
                 </div>
             </div> 
         </div>
-        <div  class="nossosprofessores" data-scroll>
-            <h2>Nossos Professores </h2>
-            <p class="p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam repellat aut neque! Doloribus sunt non aut reiciendis, vel recusandae obcaecati hic dicta repudiandae in quas quibusdam ullam, illum sed veniam!</p>
+        <div id="professores" class="nossosprofessores" data-scroll>
+            <div class="professores-text">
+                <h2>Nossos Professores </h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam repellat aut neque! Doloribus sunt non aut reiciendis, vel recusandae obcaecati hic dicta repudiandae in quas quibusdam ullam, illum sed veniam!</p>
+            </div>
             <div class="boxprofessores">
                 <div class="professores">
-                    <div class="logoprof">
-                        <img src="img/logoprof1.jpg" alt="">
-                    </div>
+                    <figure class="logoprof">
+                        <img src="img/logoprof1.jpg" alt="Benjamin Stone">
+                    </figure>
                     <h3>Benjamin Stone</h3>
                     <p>Professor de HTML5</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro eius suscipit delectus enim iusto tempora, adipisci at provident.</p>
                 </div>
                 <div class="professores">
-                    <div class="logoprof">
-                        <img src="img/logoprof2.jpg" alt="">
-                    </div>
+                    <figure class="logoprof">
+                        <img src="img/logoprof2.jpg" alt="Katleen Stone">
+                    </figure>
                     <h3>Katleen Stone</h3>
                     <p>Professora de CSS3</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro eius suscipit delectus enim iusto tempora, adipisci at provident.</p>
                 </div>
                     <div class="professores">
-                    <div class="logoprof">
-                        <img src="img/logoprof3.jpg" alt="">
-                    </div>
+                    <figure class="logoprof">
+                        <img src="img/logoprof3.jpg" alt="Sadie White">
+                    </figure>
                     <h3>Sadie White</h3>
                     <p>Professora de Javascript</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro eius suscipit delectus enim iusto tempora, adipisci at provident.</p>
@@ -188,8 +191,10 @@
             </div>
         </div>
         <div id="contato" class="contato-alteracao" data-scroll>
-            <h2>Fale Conosco</h2>
-            <p>Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia<br> quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt<br> nisi.
+            <div class="text-contato">
+                <h2>Fale Conosco</h2>
+                <p>Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.
+            </div>
             </p>
             <form action="enviar.php" method="POST">
                 <div class="intro">
@@ -206,11 +211,11 @@
    <footer>
         <div class="about">
             <h2>Sobre Hale e Whole</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur<br> adipisicing elit. Porro consectetur ut hic ipsum et<br> veritatis corrupti. Itaque eius soluta optio <br> dolorum temporibus in, atque, quos fugit sunt sit <br> quaerat dicta.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro consectetur ut hic ipsum et veritatis corrupti. Itaque eius soluta optiodolorum temporibus in, atque, quos fugit sunt sit quaerat dicta.</p>
         </div>
         <div class="subscribe">
             <h2>Se Inscreva</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. Nesciunt incidunt iure iusto <br>architecto? Numquam, natus?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt incidunt iure iusto architecto? Numquam, natus?</p>
             <input type="email" name="email" autocomplete="off" placeholder="E-mail">
             <button>Subscribe</button>
         </div>

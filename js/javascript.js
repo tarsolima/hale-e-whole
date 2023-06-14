@@ -12,5 +12,5 @@ menuMobile.init();
 const scrollSuave = new ScrollSuave('[data-menu="list"] a[href^="#"]');
 scrollSuave.init();
 
-const animacaoScroll = new AnimacaoScroll();
+const animacaoScroll = new AnimacaoScroll('[data-scroll]');
 animacaoScroll.init();
