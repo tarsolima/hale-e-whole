@@ -1,122 +1,122 @@
 .nossosprogramas {
-    padding-top: 60px;
+  padding-top: 60px;
 
-    .programas-text {
-        max-width: 37.5em;
-        margin: 0 auto;
+  .programas-text {
+    max-width: 37.5em;
+    margin: 0 auto;
 
-        .programas-h2 {
-            text-align: center;
-            font-family: $roboto;
-            font-size: 3rem;
-            padding: 0 10px;
-     
-            @media (max-width: 450px) {
-                font-size: 2rem;
-            }
-        }
-     
-        .programas-main-text {
-            font-family: $roboto;
-            text-align: center;
-            color: #808080;
-            line-height: 1.5;
-            margin: 15px 0 30px 0;
-            padding: 0 10px;
-        }
+    .programas-h2 {
+      text-align: center;
+      font-family: $roboto;
+      font-size: 3rem;
+      padding: 0 10px;
+
+      @media (max-width: 450px) {
+        font-size: 2rem;
+      }
     }
 
-   @media (max-width: 1106px) {
-      .box-reverse {
-          flex-direction: column-reverse;
-        }
+    .programas-main-text {
+      font-family: $roboto;
+      text-align: center;
+      color: #808080;
+      line-height: 1.5;
+      margin: 15px 0 30px 0;
+      padding: 0 10px;
     }
+  }
+
+  @media (max-width: 1106px) {
+    .box-reverse {
+      flex-direction: column-reverse;
+    }
+  }
 }
 
 .box1 {
-   @include flex (flex, center, center);
-   padding: 0 10px;
-   margin-bottom: 50px;
+  @include flex(flex, center, center);
+  padding: 0 10px;
+  margin-bottom: 50px;
 
-   @media (max-width: 1106px) {
-       flex-wrap: wrap;
+  @media (max-width: 1106px) {
+    flex-wrap: wrap;
+  }
+
+  .container-img-box {
+    max-width: 650px;
+    margin-right: 50px;
+
+    @media (max-width: 1106px) {
+      margin-right: 0px;
+      margin-bottom: 40px;
     }
 
-    .container-img-box {
-        max-width: 650px;
-        margin-right: 50px;
-        
-        @media (max-width: 1106px) {
-            margin-right: 0px;
-            margin-bottom: 40px;
-        }
-        
-        .img-box {
-            width: 100%;
-            vertical-align: middle;
-        }
+    .img-box {
+      width: 100%;
+      vertical-align: middle;
+    }
+  }
+
+  .container-img-box-reverse {
+    max-width: 650px;
+    margin-left: 50px;
+
+    @media (max-width: 1106px) {
+      margin-left: 0px;
+      margin-bottom: 40px;
     }
 
-    .container-img-box-reverse {
-        max-width: 650px;
-        margin-left: 50px;
+    .img-box {
+      width: 100%;
+      vertical-align: middle;
+    }
+  }
 
-        @media (max-width: 1106px) {
-            margin-left: 0px;
-            margin-bottom: 40px;
-        }
+  .box-text {
+    max-width: 550px;
 
-        .img-box {
-            width: 100%;
-            vertical-align: middle; 
-        }
+    h2 {
+      font-family: $roboto;
+      font-size: 2rem;
+      text-align: center;
+
+      @media (max-width: 450px) {
+        font-size: 1.5rem;
+      }
     }
 
-   .box-text {
-       max-width: 550px;
+    .paragraphs-program {
+      font-family: $roboto;
+      font-size: 1rem;
+      line-height: 1.5;
+      text-align: center;
+      color: #808080;
+      margin: 15px 0;
+    }
+  }
 
-       h2 {
-           font-family: $roboto;
-           font-size: 2rem;
-           text-align: center;
+  .icons {
+    max-width: 300px;
+    margin: 0 auto;
 
-           @media (max-width: 450px) {
-                font-size: 1.5rem;
-            }
-        }
-
-       .paragraphs-program {
-           font-family: $roboto;
-           font-size: 1rem;
-           line-height: 1.5;
-           text-align: center;
-           color: #808080;
-           margin: 15px 0;
-        }
+    p {
+      font-family: $roboto;
+      font-size: 1rem;
+      text-align: start;
+      color: $bgbt;
+      margin-top: 15px;
     }
 
-   .icons {
-       max-width: 300px;
-       margin: 0 auto;
-
-       p {
-           font-family: $roboto;
-           font-size: 1rem;
-           text-align: start;
-           color: $bgbt;
-           margin-top: 15px;
-        }
-
-       .fas {
-           text-align: center;
-           height: 35px;
-           width: 35px;
-           line-height: 2.7;
-           background: $bgbt;
-           border-radius: 50%;
-           margin-right: 10px;
-           color: $color1;
-           font-size: .8em;
-        }
+    .fas {
+      text-align: center;
+      height: 35px;
+      width: 35px;
+      line-height: 2.7;
+      background: $bgbt;
+      border-radius: 50%;
+      margin-right: 10px;
+      color: $color1;
+      font-size: 0.8em;
     }
+  }
 }

@@ -1,67 +1,68 @@
 .escolher {
-    padding-bottom: 30px;
+  padding-bottom: 30px;
 
-    h2 {
-        padding: 0 10px;
-        font-family: $roboto;
-        font-size: 3rem;
-        text-align: center;
+  h2 {
+    padding: 0 10px;
+    font-family: $roboto;
+    font-size: 3rem;
+    text-align: center;
 
-        @media (max-width:450px) {
-            font-size: 2rem;
-            padding: 0 5px;
-        }
+    @media (max-width: 450px) {
+      font-size: 2rem;
+      padding: 0 5px;
+    }
+  }
+
+  p {
+    margin-top: 30px;
+    font-family: $roboto;
+    color: #343a40;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: start;
+  }
+
+  .boxescolher {
+    @include flex(flex, center, center);
+    margin-top: 50px;
+
+    .escolher2 {
+      width: 25em;
+      flex-direction: column;
+      border-radius: 5px;
+      padding: 15px 15px 30px 30px;
+      box-shadow: 0 5px 50px -10px rgba(0, 0, 0, 0.2);
+
+      @media (max-width: 425px) {
+        width: 100%;
+        margin: 0 5px 12px 5px;
+      }
+
+      @media (max-width: 350px) {
+        padding: 15px 8px 30px 8px;
+      }
     }
 
-    p {
-        margin-top: 30px;
-        font-family: $roboto;
-        color: #343a40;
-        font-size: 1rem;
-        line-height: 1.5;
-        text-align: start;
+    span {
+      display: inline-block;
+      height: 35px;
+      width: 35px;
+      font-size: 0.8em;
+      background: $bgbt;
+      border-radius: 50%;
+      margin-right: 10px;
+      position: relative;
+      top: 11px;
+
+      .fa-graduation-cap,
+      .fa-university {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $color1;
+        font-size: 0.8em;
+      }
     }
-
-    .boxescolher {
-        @include flex (flex, center, center);
-        margin-top: 50px;
-
-        .escolher2 {
-            width: 25em;
-            flex-direction: column;
-            border-radius: 5px;
-            padding:15px 15px 30px 30px;
-            box-shadow: 0 5px 50px -10px rgba(0, 0, 0, 0.2);
-
-            @media (max-width:425px) {
-                width: 100%;
-                margin: 0 5px 12px 5px;
-            }
-
-            @media (max-width: 350px) {
-                padding: 15px 8px 30px 8px;
-            }
-        }
-
-        span {
-            display: inline-block;
-            height: 35px;
-            width: 35px;
-            font-size: .8em;
-            background: $bgbt;
-            border-radius: 50%;
-            margin-right: 10px;
-            position: relative;
-            top: 11px;
-
-            .fa-graduation-cap, .fa-university{
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-                color: $color1;
-                font-size: .8em;
-            }
-        }
-    }
+  }
 }

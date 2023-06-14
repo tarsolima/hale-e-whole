@@ -1,127 +1,136 @@
 .bg {
-    height: 735px;
-    max-width: 100%;
-    background-image: url('../img/bg-initial.jpg');
-    background-position: center;
-    background-size: cover;
+  height: 735px;
+  max-width: 100%;
+  background-image: url("../img/bg-initial.jpg");
+  background-position: center;
+  background-size: cover;
 
-    &::before {
-        content: "";
-        position: absolute;
-        height: 735px;
-        min-width: 100%;
-        background: #343a40;
-        opacity: .6;
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    height: 735px;
+    min-width: 100%;
+    background: #343a40;
+    opacity: 0.6;
+  }
 }
 
 .container1 {
-    position: relative;
-    @include flex (flex, center, center);
-    flex-wrap: wrap;
-    height: 735px;
-    max-width: 100%;
-    background: rgba(55, 54, 54, 0.5);
+  position: relative;
+  @include flex(flex, center, center);
+  flex-wrap: wrap;
+  height: 735px;
+  max-width: 100%;
+  background: rgba(55, 54, 54, 0.5);
 }
 
 .aprender {
-    max-width: 37.625em;
+  max-width: 37.625em;
+  padding: 0 15px;
+  margin-top: 20px;
+
+  @media (max-width: 1078px) {
+    margin-top: 90px;
+  }
+
+  @media (max-width: 906px) {
+    margin-top: 70px;
+  }
+
+  h1 {
+    color: $color1;
+    font-size: 3.25em;
+    margin-bottom: 15px;
+
+    @media (max-width: 423px) {
+      font-size: 2.25em;
+    }
+  }
+
+  p {
     padding: 0 15px;
+    line-height: 1.7;
+    color: #e1dfdff5;
+    font-size: 1.1em;
+  }
+
+  button {
+    font-family: $arial;
+    background: $bgbt;
+    color: $color1;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
     margin-top: 20px;
+    padding: 17px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
 
-    h1 {
-        color:$color1;
-        font-size: 3.25em;
-        margin-bottom: 15px;
-
-        @media (max-width: 423px) {
-            font-size: 2.25em;
-        }
+    &:hover {
+      background: $btnhover;
     }
+  }
 
-    p {
-        padding: 0 15px;
-        line-height: 1.7;
-        color: #e1dfdff5;
-        font-size: 1.1em;
-    }
-
-    button {
-        font-family: $arial;
-        background: $bgbt;
-        color: $color1;
-        text-transform: uppercase;
-        font-weight: bold;
-        border: none;
-        margin-top: 20px;
-        padding: 17px 30px;
-        border-radius: 50px;
-        cursor: pointer;
-        transition: all 0.3s;
-
-        &:hover {
-            background:$btnhover;
-        }
-    }
-
-    @media (max-width: 906px) {
-        max-width: 28.625em;
-    }
+  @media (max-width: 906px) {
+    max-width: 28.625em;
+  }
 }
 
 .login {
-    background:$color1;
-    max-height: 22.5em;
-    width: 26.25em;
-    margin: 20px;
-    padding: 40px;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px black;
+  background: $color1;
+  max-height: 22.5em;
+  width: 26.25em;
+  margin: 20px;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px black;
 
-    @media (max-width: 370px) {
-        padding: 40px 15px 40px 15px;
-        margin: 10px;
+  @media (max-width: 370px) {
+    padding: 40px 15px 40px 15px;
+    margin: 10px;
+  }
+
+  form {
+    p {
+      font-family: $arial;
+      font-size: 1.3125em;
+      margin-bottom: 20px;
     }
 
-    form  {
-        p {
-            font-family: $arial;
-            font-size: 1.3125em;
-            margin-bottom: 20px;
-        }
+    [type="email"],
+    [type="password"] {
+      width: 100%;
+      height: 3.125em;
+      display: block;
+      color: #495057;
+      margin: 10px 0;
+      padding: 0 10px;
+      border-radius: 5px;
+      border: 1px solid rgba(196, 191, 191, 0.644);
+      transition: all 0.3s;
 
-        [type=email], [type=password] {
-            width: 100%;
-            height: 3.125em;
-            display: block;
-            color: #495057;
-            margin: 10px 0;
-            padding: 0 10px;
-            border-radius: 5px;
-            border: 1px solid rgba(196, 191, 191, 0.644);
-            transition: all 0.3s;
-    
-            &:focus {
-                border-color: $bgbt ;
-            }
-        }
-    
-        [type=submit] {
-            font-family: $arial;
-            text-transform: uppercase;
-            font-weight: bold;
-            border: none;
-            background: $bgbt;
-            color: $color1;
-            margin-top: 10px;
-            padding: 17px 30px;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.3s;
-    
-            &:hover {
-                background:$btnhover;
-            }
-        }
+      &:focus {
+        border-color: $bgbt;
+      }
     }
+
+    [type="submit"] {
+      font-family: $arial;
+      text-transform: uppercase;
+      font-weight: bold;
+      border: none;
+      background: $bgbt;
+      color: $color1;
+      margin-top: 10px;
+      padding: 17px 30px;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        background: $btnhover;
+      }
+    }
+  }
 }

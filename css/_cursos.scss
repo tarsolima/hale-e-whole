@@ -1,121 +1,121 @@
 .cursos {
-    padding-top: 60px;
-    z-index: 1;
-    position: relative;
+  padding-top: 60px;
+  z-index: 1;
+  position: relative;
 
-    .overlay {
-        background: $bgbt;
-        height: 25em;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left:0;
-    }
-    
-    h2 {
-        position: relative;
-        font-family: sans-serif;
-        color: $color1;
-        text-align: center; 
-        font-size: 3.125em;
-        margin-bottom: 30px;
-    }
+  .overlay {
+    background: $bgbt;
+    height: 25em;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  h2 {
+    position: relative;
+    font-family: sans-serif;
+    color: $color1;
+    text-align: center;
+    font-size: 3.125em;
+    margin-bottom: 30px;
+  }
 }
 
 .box-cursos {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
-    align-content: center;
-    justify-content: center;
-    gap: 35px 20px;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
+  align-content: center;
+  justify-content: center;
+  gap: 35px 20px;
 }
 
 .box {
-    margin: 0 5px;
-    border-radius: 5px;
-    background:$color1;
-    text-align: center;
+  margin: 0 5px;
+  border-radius: 5px;
+  background: $color1;
+  text-align: center;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 2px 22px -1px rgba(0, 0, 0, 0.3);
+  }
+
+  figure img {
+    width: 70%;
+    background-size: cover;
+    padding: 15px;
+    border-bottom: 1px solid rgba(196, 191, 191, 0.644);
+  }
+
+  .conteudo {
+    margin-bottom: 20px;
+
+    p:last-child {
+      @media (max-width: 375px) {
+        padding: 0 5px;
+      }
+    }
+  }
+
+  a {
+    display: inline-block;
+    font-family: $arial;
+    color: $bgbt;
+    font-size: 1.15em;
     transition: all 0.3s;
 
     &:hover {
-        transform: translateY(-20px);
-        box-shadow: 0 2px 22px -1px rgba(0, 0, 0, 0.3);
+      color: $hoverlink;
+    }
+  }
+
+  p {
+    font-family: $roboto;
+    color: #808080;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 0.875em;
+
+    &:last-child {
+      font-size: 1em;
+    }
+  }
+
+  .minbox {
+    height: 3.125em;
+    @include flex(flex, space-between, center);
+    position: relative;
+    border: 1px solid rgba(228, 226, 226, 0.987);
+    padding: 0 20px;
+
+    .fas {
+      position: absolute;
+      opacity: 0.3;
     }
 
-    figure img {
-        width: 70%;
-        background-size: cover;
-        padding: 15px;
-        border-bottom: 1px solid  rgba(196, 191, 191, 0.644);
+    .fa-comments {
+      right: 40px;
+      top: 15px;
     }
 
-    .conteudo {
-        margin-bottom: 20px;
-
-        p:last-child {
-            @media (max-width:375px) {
-                padding: 0 5px;
-            }
-        }
+    p:first-child {
+      margin: 0 30px;
     }
 
-    a {
-        display: inline-block;
-        font-family: $arial;
-        color: $bgbt;
-        font-size: 1.15em;
-        transition: all 0.3s;
-
-        &:hover {
-            color:$hoverlink;
-        }
+    .footerp {
+      &::before {
+        content: " ";
+        position: absolute;
+        right: 50px;
+        top: 0;
+        height: 48px;
+        margin: 0 25px;
+        border-left: 1px solid rgba(213, 212, 212, 0.919);
+      }
     }
-
-    p {
-        font-family: $roboto;
-        color: #808080;
-        text-align: center;
-        margin: 10px 0;
-        font-size: 0.875em;        
-
-        &:last-child {
-            font-size: 1em;
-        }
-    }
-
-    .minbox {
-        height: 3.125em;
-        @include flex (flex,space-between, center);
-        position: relative;
-        border: 1px solid rgba(228, 226, 226, 0.987);
-        padding: 0 20px;
-
-        .fas {
-            position: absolute;
-            opacity: 0.3;
-        }
-
-        .fa-comments {
-            right: 40px;
-            top: 15px;
-        }
-
-        p:first-child {
-            margin: 0 30px;
-        }
-    
-        .footerp {
-            &::before {
-                content:" ";
-                position: absolute;
-                right: 50px;
-                top: 0;
-                height: 48px; 
-                margin: 0 25px;
-                border-left: 1px solid rgba(213, 212, 212, 0.919);
-            }
-        }
-    }
+  }
 }

@@ -1,83 +1,84 @@
 footer {
-    width: 100%;
-    @include flex (flex, space-around);
-    flex-wrap: wrap;
-    padding: 30px 0;
+  width: 100%;
+  @include flex(flex, space-around);
+  flex-wrap: wrap;
+  padding: 30px 0;
 
-    @media (max-width: 770px) {
-        flex-direction: column;
-        align-items: center;
+  @media (max-width: 770px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about,
+  .subscribe {
+    max-width: 25em;
+    padding: 0 10px;
+    margin-bottom: 30px;
+
+    h2 {
+      margin-bottom: 10px;
+      font-family: $arial;
     }
 
-    .about, .subscribe {
-        max-width: 25em;
-        padding: 0 10px;
-        margin-bottom: 30px;
+    p {
+      line-height: 1.5;
+      font-size: 0.875rem;
+      color: #808080;
+      font-family: $roboto;
+    }
+  }
 
-        h2 {
-            margin-bottom: 10px;
-            font-family: $arial;
-        }
-    
-        p {
-            line-height: 1.5;
-            font-size: 0.875rem;
-            color: #808080;
-            font-family: $roboto;
-        }
+  .subscribe {
+    input[type="email"] {
+      height: 40px;
+      width: 50%;
+      margin-top: 15px;
+      padding-left: 10px;
+      color: #495057;
+      border: 1px solid rgba(196, 191, 191, 0.644);
+      transition: all 0.3s;
+
+      &:focus {
+        border-color: $bgbt;
+      }
+
+      @media (max-width: 340px) {
+        width: 100%;
+      }
     }
 
-    .subscribe {
-        input[type=email] {
-            height: 40px;
-            width: 50%;
-            margin-top: 15px;
-            padding-left: 10px;
-            color: #495057;
-            border: 1px solid rgba(196, 191, 191, 0.644);
-            transition: all 0.3s;
+    button {
+      height: 2.5em;
+      padding: 20px 30px;
+      line-height: 0.3;
+      color: $color1;
+      text-transform: uppercase;
+      font-weight: bold;
+      background: $bgbt;
+      border: none;
+      cursor: pointer;
+      position: relative;
+      right: 8px;
+      top: 2px;
+      transition: all 0.3s;
 
-            &:focus {
-                border-color: $bgbt;
-            }
+      &:hover {
+        background: $btnhover;
+      }
 
-            @media (max-width: 340px) {
-                width: 100%;
-            }
-        }
-
-        button {
-            height: 2.5em;
-            padding: 20px 30px;
-            line-height: .3;
-            color:$color1 ;
-            text-transform: uppercase;
-            font-weight: bold;
-            background: $bgbt;
-            border: none;
-            cursor: pointer;
-            position: relative;
-            right: 8px;
-            top: 2px;
-            transition: all 0.3s;
-
-            &:hover {
-                background:$btnhover;
-            }
-
-            @media (max-width: 340px) {
-                margin-top: 15px;
-                width: 100%;
-                right: 0px;
-            }
-        }
+      @media (max-width: 340px) {
+        margin-top: 15px;
+        width: 100%;
+        right: 0px;
+      }
     }
+  }
 }
 
 .abner {
-    text-align: center;
-    font-size: 1rem;
-    color:#808080;
-    margin-bottom: 10px;
-    padding: 0 10px;
+  text-align: center;
+  font-size: 1rem;
+  color: #808080;
+  margin-bottom: 10px;
+  padding: 0 10px;
 }

@@ -1,134 +1,135 @@
 .contato-alteracao {
-    background: #f8f9fa;
+  background: #f8f9fa;
+  margin: 0 auto;
+  padding: 30px 0;
+
+  .text-contato {
+    max-width: 37.5em;
     margin: 0 auto;
-    padding: 30px 0;
 
-    .text-contato {
-        max-width: 37.5em;
-        margin: 0 auto;
+    h2 {
+      font-family: "Roboto", sans-serif;
+      font-size: 3rem;
+      text-align: center;
+      padding: 0px 10px;
 
-        h2 {
-            font-family: "Roboto",sans-serif;
-            font-size: 3rem;
-            text-align: center;
-            padding: 0 10px;
-
-            @media (max-width:450px) {
-                font-size: 2rem;
-                padding: 0 5px;
-            }
-        }
-    
-        p {
-            font-family: $arial;
-            font-family: "Roboto",sans-serif;
-            text-align: center;
-            line-height: 1.5;
-            color: #808080b0;
-            margin: 15px 0 30px 0;
-            padding: 0 10px;
-        }
+      @media (max-width: 450px) {
+        font-size: 2rem;
+        padding: 0 5px;
+      }
     }
 
-    form {
-        max-width: 37.5em;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
+    p {
+      font-family: $arial;
+      font-family: "Roboto", sans-serif;
+      text-align: center;
+      line-height: 1.5;
+      color: #808080b0;
+      margin: 15px 0 30px 0;
+      padding: 0 10px;
+    }
+  }
+
+  form {
+    max-width: 37.5em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 624px) {
+      max-width: 25em;
+    }
+
+    @media (max-width: 440px) {
+      padding: 0 10px;
+    }
+
+    .intro {
+      @include flex(flex, space-between);
+
+      @media (max-width: 624px) {
+        display: block;
+      }
+
+      [type="text"] {
+        width: 47%;
+        height: 48px;
+        border-radius: 5px;
+        color: #495057;
+        border: 1px solid #ced4da;
+        line-height: 1.7;
+        padding-left: 15px;
+        transition: all 0.3s;
+
+        &:focus {
+          border-color: $bgbt;
+        }
 
         @media (max-width: 624px) {
-            max-width: 25em;
+          width: 100%;
         }
-
-        @media (max-width: 440px) {
-            padding: 0 10px;
-        }
-        
-        .intro {
-            @include flex (flex, space-between);
-
-            @media (max-width:624px) {
-                display: block;
-            }
-
-             [type="text"] {
-                 width: 47%;
-                 height: 48px;
-                 border-radius: 5px;
-                 color: #495057;
-                 border: 1px solid #ced4da;
-                 line-height: 1.7;
-                 padding-left: 15px;
-                 transition: all 0.3s;
-
-                 &:focus {
-                    border-color: $bgbt;
-                 }
-
-                 @media (max-width: 624px) {
-                    width: 100%;
-                }
-            }
-        }
-
-        [type="text"], [type="email"] {
-            width: 100%;
-            height: 3.125em;
-            display: block;
-            color: #495057;
-            margin: 10px 0;
-            border-radius: 5px;
-            border: 1px solid rgba(196, 191, 191, 0.644);
-            padding: 0 10px;
-            -webkit-transition: all 0.3s;
-            transition: all 0.3s;
-
-            &:focus {
-                border-color: $bgbt;
-            }
-        }
-
-        [type="email"] {
-            @media (max-width:625px) {
-                margin: 0 auto 0 auto;
-            }
-        }
-
-         textarea {
-            width: 100%;
-            height: 14.375em;
-            font-family: $roboto;
-            margin: 0px;
-            padding-left: 10px;
-            line-height: 1.5;
-            border-radius: 5px;
-            color: #495057;
-            border: 1px solid rgba(196, 191, 191, 0.644);
-            resize:vertical;
-            transition: all 0.3s;
-
-            &:focus {
-                border-color: $bgbt;
-            }
-        }
-
-        .buttonmensage {
-            align-self: flex-start;
-            font-family: Arial,Helvetica,sans-serif;
-            font-weight: bold;
-            text-transform: uppercase;
-            color: #fff;
-            background: #7971ea;
-            margin-top: 20px;
-            padding: 17px 30px;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all .3s;
-
-            &:hover {
-                background:$btnhover;
-            }
-        }
+      }
     }
+
+    [type="text"],
+    [type="email"] {
+      width: 100%;
+      height: 3.125em;
+      display: block;
+      color: #495057;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid rgba(196, 191, 191, 0.644);
+      padding: 0 10px;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+
+      &:focus {
+        border-color: $bgbt;
+      }
+    }
+
+    [type="email"] {
+      @media (max-width: 625px) {
+        margin: 0 auto 0 auto;
+      }
+    }
+
+    textarea {
+      width: 100%;
+      height: 14.375em;
+      font-family: $roboto;
+      margin: 0px;
+      padding-left: 10px;
+      line-height: 1.5;
+      border-radius: 5px;
+      color: #495057;
+      border: 1px solid rgba(196, 191, 191, 0.644);
+      resize: vertical;
+      transition: all 0.3s;
+
+      &:focus {
+        border-color: $bgbt;
+      }
+    }
+
+    .buttonmensage {
+      align-self: flex-start;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #fff;
+      background: #7971ea;
+      margin-top: 20px;
+      padding: 17px 30px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        background: $btnhover;
+      }
+    }
+  }
 }
