@@ -9,7 +9,7 @@ modal.init();
 const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]');
 menuMobile.init();
 
-const scrollSuave = new ScrollSuave('[data-menu="list"] a[href^="#"]');
+const scrollSuave = new ScrollSuave('header a[href^="#"]');
 scrollSuave.init();
 
 const animacaoScroll = new AnimacaoScroll('[data-scroll]');

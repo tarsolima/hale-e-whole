@@ -29,16 +29,8 @@
   padding: 0 15px;
   margin-top: 20px;
 
-  @media (max-width: 1078px) {
-    margin-top: 90px;
-  }
-
-  @media (max-width: 906px) {
-    margin-top: 70px;
-  }
-
   h1 {
-    color: $color1;
+    color: $title;
     font-size: 3.25em;
     margin-bottom: 15px;
 
@@ -49,9 +41,8 @@
 
   p {
     padding: 0 15px;
-    line-height: 1.7;
-    color: #e1dfdff5;
-    font-size: 1.1em;
+    @include paragraphs($p-text-main);
+    text-align: start;
   }
 
   button {

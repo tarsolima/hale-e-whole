@@ -23,7 +23,7 @@ footer {
     p {
       line-height: 1.5;
       font-size: 0.875rem;
-      color: #808080;
+      color: #333;
       font-family: $roboto;
     }
   }
@@ -59,7 +59,7 @@ footer {
       cursor: pointer;
       position: relative;
       right: 8px;
-      top: 2px;
+      top: 1px;
       transition: all 0.3s;
 
       &:hover {
@@ -78,7 +78,7 @@ footer {
 .abner {
   text-align: center;
   font-size: 1rem;
-  color: #808080;
+  color: #333;
   margin-bottom: 10px;
   padding: 0 10px;
 }

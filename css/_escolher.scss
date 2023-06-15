@@ -2,10 +2,8 @@
   padding-bottom: 30px;
 
   h2 {
+    @include subtitle;
     padding: 0 10px;
-    font-family: $roboto;
-    font-size: 3rem;
-    text-align: center;
 
     @media (max-width: 450px) {
       font-size: 2rem;
@@ -14,12 +12,10 @@
   }
 
   p {
-    margin-top: 30px;
-    font-family: $roboto;
-    color: #343a40;
-    font-size: 1rem;
-    line-height: 1.5;
+    @include paragraphs;
+    // color: #343a40;
     text-align: start;
+    margin-top: 30px;
   }
 
   .boxescolher {

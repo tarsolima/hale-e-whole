@@ -3,6 +3,13 @@ $bgbt: #7971ea;
 $btnhover:#4f45e3;
 $hoverlink: #3a2ee0;
 
+$title: #fff;
+$p-text-main: #e1dfdff5;
+
+$subtitle: #000;
+$subtitle-white: #fff;
+
+$paragraph: #333;
 
 $roboto: 'Roboto', sans-serif;
 $arial: Arial, Helvetica, sans-serif;
@@ -11,4 +18,20 @@ $arial: Arial, Helvetica, sans-serif;
     display: $display;
     justify-content: $justify;
     align-items: $align;
+}
+
+@mixin subtitle($color: $subtitle, $font: 3rem, $family: $roboto) {
+    color: $color;
+    font-size: $font;
+    font-family: $family;
+    text-align: center;
+    line-height: 1.2;
+}
+
+@mixin paragraphs($color: $paragraph, $font: 1rem, $family: $arial) {
+    color: $color;
+    font-size: $font;
+    font-family: $family;
+    text-align: center;
+    line-height: 1.5;
 }
