@@ -56,7 +56,7 @@
         transition: all 0.3s;
 
         &:focus {
-          border-color: $bgbt;
+          border-color: #7971ea;
         }
 
         @media (max-width: 624px) {
@@ -79,7 +79,7 @@
       transition: all 0.3s;
 
       &:focus {
-        border-color: $bgbt;
+        border-color: #7971ea;
       }
     }
 
@@ -103,23 +103,16 @@
       transition: all 0.3s;
 
       &:focus {
-        border-color: $bgbt;
+        border-color: #7971ea;
       }
     }
 
     .buttonmensage {
-      align-self: flex-start;
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: bold;
+      @include button;
+      align-self: start;
       text-transform: uppercase;
-      color: #fff;
-      background: #7971ea;
       margin-top: 20px;
       padding: 17px 30px;
-      border: none;
-      border-radius: 50px;
-      cursor: pointer;
-      transition: all 0.3s;
 
       &:hover {
         background: $btnhover;
