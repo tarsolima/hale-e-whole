@@ -46,17 +46,10 @@
   }
 
   button {
-    font-family: $arial;
-    background: $bgbt;
-    color: $color1;
+    @include button;
     text-transform: uppercase;
-    font-weight: bold;
-    border: none;
     margin-top: 20px;
     padding: 17px 30px;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s;
 
     &:hover {
       background: $btnhover;
@@ -69,7 +62,7 @@
 }
 
 .login {
-  background: $color1;
+  background: #fff;
   max-height: 22.5em;
   width: 26.25em;
   margin: 20px;
@@ -83,7 +76,7 @@
   }
 
   form {
-    p {
+    h2 {
       font-family: $arial;
       font-size: 1.3125em;
       margin-bottom: 20px;
@@ -102,22 +95,15 @@
       transition: all 0.3s;
 
       &:focus {
-        border-color: $bgbt;
+        border-color: #7971ea;
       }
     }
 
     [type="submit"] {
-      font-family: $arial;
+      @include button;
       text-transform: uppercase;
-      font-weight: bold;
-      border: none;
-      background: $bgbt;
-      color: $color1;
       margin-top: 10px;
       padding: 17px 30px;
-      border-radius: 50px;
-      cursor: pointer;
-      transition: all 0.3s;
 
       &:hover {
         background: $btnhover;

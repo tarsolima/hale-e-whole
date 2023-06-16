@@ -1,7 +1,8 @@
-$color1: #fff;
-$bgbt: #7971ea;
-$btnhover:#4f45e3;
 $hoverlink: #3a2ee0;
+
+$button-bg: #7971ea;
+$btn-color: #fff;
+$btnhover:#4f45e3;
 
 $title: #fff;
 $p-text-main: #e1dfdff5;
@@ -34,4 +35,16 @@ $arial: Arial, Helvetica, sans-serif;
     font-family: $family;
     text-align: center;
     line-height: 1.5;
+}
+
+
+@mixin button {
+    font-family: $arial;
+    font-weight: bold;
+    border: none;
+    background: $button-bg;
+    color: $btn-color;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .3s;
 }
